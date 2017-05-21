@@ -1,3 +1,3 @@
 # warsawjs-workshop-6-whiteboard
 
-Test Witedoard designed at WarsawJS using MeteorJS.
+Test Witeboard designed at WarsawJS using MeteorJS.
