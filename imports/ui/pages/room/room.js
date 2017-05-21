@@ -60,9 +60,9 @@ Template.App_room.events({
     }
   },
   'click .clear-all button': function (e) {
+    e.preventDefault();
     if (confirm("Czy na pewno chcesz wszystko usunąć?")) {
         const room = Rooms.findOne(FlowRouter.getParam('id'));
-        e.preventDefault();
         if(room && canvas_manager){
             canvas_manager.clear();
             Meteor.call('rooms.updateDataUrl', room._id, null);
