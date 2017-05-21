@@ -56,6 +56,12 @@ Template.App_room.events({
       canvas_manager.color = color;
     }
   },
+  'click .erraser': function (e) {
+    e.preventDefault();
+    if(canvas_manager){
+      canvas_manager.color = 'white';
+    }
+  },
   'change .size-selector input': function(e) {
     if(canvas_manager){
       const size = $(e.currentTarget).val();
