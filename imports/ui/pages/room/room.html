@@ -1,0 +1,24 @@
+<template name="App_room">
+  <h1>Room: {{room.title}}</h1>
+  <div class="back" > <a href="{{pathFor '/'}}"> back ...</a> </div>
+  <div class="selectors">
+    <div class="color-selector">
+      <p>Color:</p>
+      <a href="#" class="option black" data-color="black"></a>
+      <a href="#" class="option red" data-color="red"></a>
+      <a href="#" class="option blue" data-color="blue"></a>
+      <a href="#" class="option green" data-color="green"></a>
+      <a href="#" class="option yellow" data-color="yellow"></a>
+      <a href="#" class="option white" data-color="white"></a>
+    </div>
+    <div class="size-selector">
+      <p>Size:</p>
+      <input type="number" class="input" min="1" step="1" value="2">
+    </div>
+    <div class="clear-all">
+    <button>Clear</button>
+    </div>
+  </div>    
+  <canvas id="canvas" width="500" height="400"></canvas>
+
+</template>

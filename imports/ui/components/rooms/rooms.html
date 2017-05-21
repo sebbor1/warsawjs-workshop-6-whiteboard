@@ -1,0 +1,14 @@
+<template name="rooms">
+  <h2>Rooms!</h2>
+  <ul>
+    <li>
+      <form class="rooms-link-add">
+        <input type="text" name="title" placeholder="Title" required>
+        <input type="submit" name="submit" value="Add new room">
+      </form>
+    </li>
+    {{#each rooms}}
+      <div><a href="{{pathFor '/room/:id' id=_id}}">{{title}}</a> | <a href="#" class="room-delete">delete</a></div>
+    {{/each}}
+  </ul>
+</template>

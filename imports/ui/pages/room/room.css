@@ -1,0 +1,69 @@
+/* CSS declarations go here */
+#canvas{
+  display: block;
+  margin: auto;
+  border: 4px solid #f7302f;
+  background: white;
+  cursor: pointer;
+}
+
+h1{
+  text-align: center;
+}
+
+.back{
+  text-align: center;
+  margin: 15px;
+}
+
+.selectors{
+  margin: auto;
+  text-align: center;
+}
+
+.clear-all{
+  display: inline-block;
+  padding: 15px;
+}
+
+.size-selector{
+  display: inline-block;
+  padding: 15px;
+}
+
+.color-selector{
+  display: inline-block;
+  text-align: center;
+  padding: 15px;
+}
+
+.color-selector .option{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid black;
+}
+
+.color-selector .option.black{
+  background-color: black;
+}
+
+.color-selector .option.red{
+  background-color: red;
+}
+
+.color-selector .option.blue{
+  background-color: blue;
+}
+
+.color-selector .option.yellow{
+  background-color: yellow;
+}
+
+.color-selector .option.green{
+  background-color: green;
+}
+
+.color-selector .option.white{
+  background-color: white;
+}
