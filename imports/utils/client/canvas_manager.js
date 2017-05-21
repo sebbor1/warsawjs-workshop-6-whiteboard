@@ -71,7 +71,7 @@ export class CanvasManager{
 
       // this.context.fillStyle = 'white';
       this.context.clearRect(0, 0, this.width, this.height);
-      this.callback && this.callback();
+      // this.callback && this.callback();
 
   }
 

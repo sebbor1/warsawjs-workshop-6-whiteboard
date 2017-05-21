@@ -32,12 +32,15 @@ Template.App_room.onRendered(function(){
 });
 
 Template.App_room.helpers({
-  room() {
+  room(){
     const room = Rooms.findOne(FlowRouter.getParam('id'));
     if(room && canvas_manager){
+
       if(room.dataUrl)  {
+
         canvas_manager.load(room.dataUrl);
       }else{
+
         canvas_manager.clear();
       }
     }

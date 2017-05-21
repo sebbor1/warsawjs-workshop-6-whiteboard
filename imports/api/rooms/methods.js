@@ -18,7 +18,7 @@ Meteor.methods({
     return Rooms.remove(roomId);
   },
   'rooms.updateDataUrl'(roomId, dataUrl){
-    if(dataUrl){
+    //if(dataUrl){
       // check(dataUrl, String);
       check(roomId, String);
 
@@ -27,6 +27,6 @@ Meteor.methods({
         updatedAt: new Date()
         }
       });
-    }
+    // }
   },
 });
